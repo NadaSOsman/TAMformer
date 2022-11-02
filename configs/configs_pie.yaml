@@ -1,0 +1,38 @@
+model_opts:
+  model: Static
+  backbone: vgg16
+  obs_input_type: [speed, box, pose, local_context]
+  enlarge_ratio: 1.5 # enlarging the original bounding box to capture local spatial context
+  obs_length: 16
+  time_to_event: 30
+  min_encoding_len: 106
+  balance_data: False # set to True to resample data so that the number of samples in each class is the same
+  apply_class_weights: True # apply class weights to offset class imbalance
+  dataset: pie
+  normalize_boxes: True
+  data_augmentation: True
+  generator: True # using generator is slower but uses less memory, otherwise up to 64GB RAM may be required to run some of the models
+  path_to_pose: ./data/PIE/poses
+  batch_size: 128
+  val_batch_size: 636
+  dropout: 0.1
+  interval: 30
+  classifier_activation: sigmoid
+  classifier_loss: binary_crossentropy
+  epochs: 500
+  optimizer: sgd
+  lr: 0.00001
+  model_path: ./models
+  step: 3
+  seq_len: 136
+  feat_size: [1, 4, 36, 512] 
+  negative_weight: 0.3
+  positive_weight: 0.7
+data_opts:
+  fstride: 1
+  sample_type: all  # all or beh only when model_opts/dataset is set to jaad
+  subset: default
+  data_split_type: default  # kfold, random, default
+  seq_type: crossing
+  min_track_size: 16 # tracks shorter than this length will be discarded
+  path_to_dataset: ./data/PIE
