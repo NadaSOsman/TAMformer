@@ -11,7 +11,7 @@ This repository hosts the code related to the paper: Nada Osman, Guglielmo Campo
 ```
 
 ## Requirments
-Refere to the procedure described in [https://github.com/NadaSOsman/EarlyPedestrianActionPrediction/]
+Refere to the procedure described in [Early Pedestrian Intent Prediction](https://github.com/NadaSOsman/EarlyPedestrianActionPrediction/)
 
 ## Training
 1. Model, data and input types configurations can be modified in `config_file/configs_all.yaml`, `config_file/configs_beh.yaml`, or `config_file/configs_pie.yaml`
