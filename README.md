@@ -32,4 +32,4 @@ Refere to the procedure described in [Early Pedestrian Intent Prediction](https:
    `python3 run.py --configs_file config_file/configs_<dataset>.yaml --resume`
   
 ## Testing
-    `python3 run.py --configs_file config_file/configs_<dataset>.yaml --test`
+    python3 run.py --configs_file config_file/configs_<dataset>.yaml --test
