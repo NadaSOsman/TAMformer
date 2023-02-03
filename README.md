@@ -12,7 +12,7 @@ This repository hosts the code related to the paper: Nada Osman, Guglielmo Campo
 
 ## Requirments
 1. For dataset and requirments preparation, Refere to the procedure described in [Early Pedestrian Intent Prediction](https://github.com/NadaSOsman/EarlyPedestrianActionPrediction/).
-2. Update the file `keras/layers/advanced_activations.py` with our updated version that force the masking of future instances for the learned masking weights.  
+2. Replace the file `keras/layers/advanced_activations.py` with our updated version that force the masking of future instances for the learned masking weights.  
 
 ## Training
 1. Model, data and input types configurations can be modified in `config_file/configs_all.yaml`, `config_file/configs_beh.yaml`, or `config_file/configs_pie.yaml`
