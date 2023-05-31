@@ -34,3 +34,6 @@ This repository hosts the code related to the paper: Nada Osman, Guglielmo Campo
   
 ## Testing
     python3 run.py --configs_file config_file/configs_<dataset>.yaml --test
+
+## Pre-trained Models
+You can find [here](https://drive.google.com/drive/folders/1xJxmt0w5qYgEMe7bGAMQzBntOG-3kHdQ?usp=sharing) our pre-trained checkpoints.
